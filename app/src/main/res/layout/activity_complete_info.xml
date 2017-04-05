@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#f1f1f1"
+    tools:context="com.zz.zy.happychat.activity.CompleteInfoActivity">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        app:contentInsetStart="0dp"
+        android:elevation="5dp"
+        android:background="#fff"
+        android:layout_height="?attr/actionBarSize">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="20sp"
+                android:textColor="#F3A0B0"
+                android:text="完善资料"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_ok"
+                android:layout_width="wrap_content"
+                android:textSize="17sp"
+                android:text="完成"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textColor="#F3A0B0"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#F1F1F1"
+        android:paddingBottom="30dp"
+        android:paddingTop="30dp"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_takephoto"
+            android:layout_width="120dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/takephoto"
+            app:civ_border_color="#ff727272"
+            android:layout_height="120dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="17sp"
+            android:textColor="#000"
+            android:text="性别"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:id="@+id/cb_man"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:checked="false"
+            android:layout_height="18dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="男"
+            android:layout_marginLeft="6dp"
+            android:textSize="15sp"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:id="@+id/cb_woman"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:checked="true"
+            android:layout_height="18dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="女"
+            android:layout_marginLeft="6dp"
+            android:textSize="15sp"
+            android:textColor="#F77D86"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="注册后不能修改"
+            android:textSize="14sp"
+            android:textColor="#F77D86"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="#f1f1f1"
+        android:layout_height="1dp"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="#fff"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="17sp"
+            android:textColor="#000"
+            android:text="昵称"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_nickname"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="点击输入昵称"
+            android:textSize="16sp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f1f1f1"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="#fff"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="17sp"
+            android:textColor="#000"
+            android:text="年龄"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_chooseBirth"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:text="点击选择出生日期"
+            android:textSize="16sp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f1f1f1"></View>
+</LinearLayout>

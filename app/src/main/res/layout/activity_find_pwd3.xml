@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.zz.zy.happychat.activity.FindPwd3Activity">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        app:contentInsetStart="0dp"
+        android:background="#fff"
+        android:elevation="5dp"
+        android:layout_height="?attr/actionBarSize">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:id="@+id/fl_back"
+                android:layout_width="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center"
+                    android:src="@drawable/fan1"
+                    android:layout_height="20dp" />
+            </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="找回密码(3/3)"
+                android:textColor="#F3A0B0"
+                android:textSize="20sp"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:background="#fff"
+        android:layout_height="45dp">
+        <ImageView
+            android:layout_width="18dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/yaoshi"
+            android:layout_height="18dp" />
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:hint="请设置登录密码"
+            android:inputType="textPassword"
+            android:layout_marginLeft="6dp"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:background="#fff"
+        android:layout_height="45dp">
+        <ImageView
+            android:layout_width="18dp"
+            android:scaleType="fitXY"
+            android:contentDescription="@null"
+            android:src="@drawable/yaoshi"
+            android:layout_height="18dp" />
+        <EditText
+            android:id="@+id/et_repassword"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:hint="请重复输入密码"
+            android:inputType="textPassword"
+            android:layout_marginLeft="6dp"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="确认修改"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:background="@drawable/bg_round_login"
+        android:layout_height="42dp" />
+</LinearLayout>

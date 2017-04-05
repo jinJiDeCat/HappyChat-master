@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f1f1f1"
+    android:orientation="vertical"
+    tools:context="com.zz.zy.happychat.activity.ReportActivity">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:elevation="5dp"
+        app:contentInsetStart="0dp"
+        android:background="#fff"
+        android:layout_height="?attr/actionBarSize">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:id="@+id/fl_back"
+                android:layout_width="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center"
+                    android:contentDescription="@null"
+                    android:src="@drawable/fan2"
+                    android:layout_height="20dp" />
+            </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:text="举报"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_next"
+                android:layout_width="wrap_content"
+                android:text="下一步"
+                android:textSize="15sp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="请举证(选填)"
+        android:textSize="15sp"
+        android:layout_marginBottom="6dp"
+        android:paddingLeft="10dp"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ll_takePic"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="17sp"
+                android:textColor="#000"
+                android:text="图片证据"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:text="选择"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="18dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/fn1"
+                android:layout_height="18dp" />
+        </LinearLayout>
+        <GridView
+            android:id="@+id/gv_image"
+            android:layout_width="match_parent"
+            android:background="#fff"
+            android:numColumns="3"
+            android:layout_height="wrap_content"></GridView>
+    </LinearLayout>
+</LinearLayout>

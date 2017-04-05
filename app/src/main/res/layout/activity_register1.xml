@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#f1f1f1"
+    tools:context="com.zz.zy.happychat.activity.Register1Activity">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        app:contentInsetStart="0dp"
+        android:background="#fff"
+        android:elevation="5dp"
+        android:layout_height="?attr/actionBarSize">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:id="@+id/fl_back"
+                android:layout_width="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center"
+                    android:src="@drawable/fan1"
+                    android:layout_height="20dp" />
+            </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="注册(1/3)"
+                android:textColor="#F3A0B0"
+                android:textSize="20sp"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="#fff"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="18sp"
+            android:text="+86"
+            android:textColor="#F290A5"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:hint="请输入手机号"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:inputType="phone"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="下一步"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:background="@drawable/bg_round_login"
+        android:layout_height="42dp" />
+</LinearLayout>

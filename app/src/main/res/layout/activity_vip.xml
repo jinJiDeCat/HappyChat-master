@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#f1f1f1"
+    tools:context="com.zz.zy.happychat.activity.VipActivity">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:elevation="5dp"
+        app:contentInsetStart="0dp"
+        android:background="#EF889D"
+        android:layout_height="?attr/actionBarSize">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:id="@+id/fl_back"
+                android:layout_width="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center"
+                    android:src="@drawable/fn"
+                    android:layout_height="20dp" />
+            </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:text="会员"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:padding="10dp"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tv_vip"
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            tools:text="会员级别:普通会员"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_toVip"
+            android:layout_width="wrap_content"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="8dp"
+            android:text="成为会员"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:textColor="#fff"
+            android:layout_alignParentEnd="true"
+            android:paddingRight="8dp"
+            android:background="@drawable/bg_round_pink"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:layout_height="wrap_content">
+        <com.zz.zy.happychat.view.SquareImageView
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/lanse"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_action"
+            android:layout_width="wrap_content"
+            android:textSize="17sp"
+            android:textColor="#fff"
+            android:layout_centerInParent="true"
+            tools:text="普通用户:每日免费通话5分钟\n会员特权:每日免费通话30分钟"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

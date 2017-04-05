@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="8dp"
+        android:gravity="center_vertical"
+        android:background="#fff"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:layout_width="83dp"
+            app:cardCornerRadius="10dp"
+            android:layout_height="83dp">
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/meinv"
+                android:layout_height="match_parent" />
+        </android.support.v7.widget.CardView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_nickname"
+                android:layout_width="wrap_content"
+                android:text="千与千寻"
+                android:textSize="17sp"
+                android:textColor="#000"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="1dp"
+                    android:background="@drawable/bg_round_woman"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/iv_sex"
+                        android:layout_width="12dp"
+                        android:scaleType="fitXY"
+                        android:layout_marginRight="3dp"
+                        android:src="@drawable/bainvxing"
+                        android:layout_height="12dp" />
+                    <TextView
+                        android:id="@+id/tv_sex"
+                        android:layout_width="wrap_content"
+                        android:text="女"
+                        android:textSize="12sp"
+                        android:textColor="#fff"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_DialogTime"
+                android:layout_width="wrap_content"
+                android:text="通话时长:1分钟"
+                android:textSize="13sp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:text="10:20"
+            android:textSize="13sp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f1f1f1" />
+</LinearLayout>

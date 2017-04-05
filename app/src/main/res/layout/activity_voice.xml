@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#f1f1f1"
+    tools:context="com.zz.zy.happychat.activity.VoiceActivity">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:elevation="5dp"
+        app:contentInsetStart="0dp"
+        android:background="#EF889D"
+        android:layout_height="?attr/actionBarSize">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:id="@+id/fl_back"
+                android:layout_width="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center"
+                    android:src="@drawable/fn"
+                    android:layout_height="20dp" />
+            </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:text="语音签名"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:background="#fff"
+        android:text="一段好的语音更能打动用户哟"
+        android:layout_height="40dp" />
+    <com.zz.zy.happychat.view.VoiceLineView
+        android:id="@+id/voiceView"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_height="100dp" />
+     <TextView
+         android:id="@+id/tv_time"
+         android:padding="10dp"
+         android:layout_width="match_parent"
+         android:text="0s"
+         android:textSize="20sp"
+         android:gravity="center"
+         android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ll_play"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_play"
+                android:layout_width="50dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bo"
+                android:layout_height="50dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:text="播放"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="match_parent"></View>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/ib_record"
+                android:layout_width="50dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/record_background_selector"
+                android:src="@drawable/bo1"
+                android:layout_height="50dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:text="录音"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="完成"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:background="@drawable/bg_round_login"
+        android:layout_height="42dp" />
+</LinearLayout>

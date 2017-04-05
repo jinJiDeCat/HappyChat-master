@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#f1f1f1"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        app:contentInsetStart="0dp"
+        android:elevation="5dp"
+        android:background="#EF889D"
+        android:layout_height="?attr/actionBarSize">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_centerInParent="true"
+               android:textSize="20sp"
+               android:textColor="#fff"
+               android:text="最近联系人"
+               android:layout_height="wrap_content" />
+       </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/xrecyclerview"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content" />
+</LinearLayout>

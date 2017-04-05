@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/xingkong"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_scanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+    <com.zz.zy.happychat.view.RadarViewGroup
+        android:id="@+id/radar"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+
+        <com.zz.zy.happychat.view.RadarView
+            android:id="@+id/id_scan_circle"
+            android:layout_width="280dp"
+            android:layout_height="280dp"/>
+    </com.zz.zy.happychat.view.RadarViewGroup>
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_round_pink"
+        android:text="取消"
+        android:textSize="17sp"
+        android:textColor="#fff"
+        android:layout_marginBottom="100dp"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_icon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <RelativeLayout
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="80dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/fugu"
+                app:civ_border_color="#ff727272"
+                android:layout_height="80dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_call"
+        android:layout_width="match_parent"
+        android:background="@drawable/xingkong"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/ll_call"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+            <com.zz.zy.happychat.view.DiffuseView
+                android:id="@+id/diffuseView"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                app:diffuse_color="#f4a2b3"
+                app:diffuse_coreColor="#EF889D"
+                app:diffuse_coreImage="@android:drawable/ic_menu_call"
+                app:diffuse_coreRadius="70"
+                app:diffuse_maxWidth="200"
+                android:layout_marginBottom="30dp"
+                app:diffuse_width="5"/>
+            <!--<FrameLayout-->
+                <!--android:layout_width="130dp"-->
+                <!--android:layout_height="130dp">-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/iv_large"-->
+                    <!--android:layout_width="130dp"-->
+                    <!--android:scaleType="fitXY"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:src="@drawable/bg_ring_pink4"-->
+                    <!--android:layout_height="130dp" />-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/iv_middle"-->
+                    <!--android:layout_width="120dp"-->
+                    <!--android:scaleType="fitXY"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:src="@drawable/bg_ring_pink3"-->
+                    <!--android:layout_height="120dp" />-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/iv_small"-->
+                    <!--android:layout_width="110dp"-->
+                    <!--android:scaleType="fitXY"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:src="@drawable/bg_ring_pink2"-->
+                    <!--android:layout_height="110dp" />-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/iv_small2"-->
+                    <!--android:layout_width="100dp"-->
+                    <!--android:scaleType="fitXY"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:src="@drawable/bg_ring_pink"-->
+                    <!--android:layout_height="100dp" />-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/iv_call"-->
+                    <!--android:padding="20dp"-->
+                    <!--android:layout_width="90dp"-->
+                    <!--android:scaleType="fitXY"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:src="@drawable/dianhua1"-->
+                    <!--android:background="@drawable/bg_circle_pink"-->
+                    <!--android:layout_height="90dp" />-->
+            <!--</FrameLayout>-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:text="开始连线"
+                android:layout_marginTop="8dp"
+                android:textColor="#EF889D"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '25.0.2'
+
+    defaultConfig {
+        applicationId "com.zz.zy.happychat"
+        minSdkVersion 17
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0.1"
+//        renderscriptTargetApi 18
+//        renderscriptSupportModeEnabled true
+        multiDexEnabled true
+//        jackOptions{
+//            enabled true
+//        }
+    }
+
+    sourceSets {
+        main {
+            jni.srcDirs = []
+            jniLibs.srcDirs = ['src/main/libs']
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.jaeger.statusbaruitl:library:1.3.0'
+    compile 'com.jakewharton:butterknife:8.1.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.1.0'
+    compile 'com.youth.banner:banner:1.4.1'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.android.support:cardview-v7:24.2.1'
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'com.jcodecraeer:xrecyclerview:1.3.2'
+    compile 'com.yanzhenjie:album:1.0.0'
+    compile 'com.mylhyl:superDialog:1.0.2'
+    compile project(':recyclerviewpager')
+    compile files('libs/MobTools-2016.1107.1809.jar')
+    compile files('libs/libammsdk.jar')
+    compile 'com.lzy.net:okgo:2.1.4'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.wuxiaolong.androidutils:androidutils:1.0.6'
+    compile 'com.alibaba:fastjson:1.2.22'
+    compile 'com.bigkoo:pickerview:2.1.1'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile files('libs/alipaySdk-20161222.jar')
+    compile project(':CallLib')
+    compile project(':IMLib')
+    compile 'top.zibin:Luban:1.0.9'
+    compile 'com.orhanobut:logger:1.15'
+    compile 'com.lzy.widget:imagepicker:0.3.2'
+}

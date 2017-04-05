@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.zz.zy.happychat.activity.MainActivity">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"></android.support.v4.view.ViewPager>
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        app:contentInsetStart="0dp"
+        android:background="#fff"
+        android:elevation="5dp"
+        android:layout_height="?attr/actionBarSize">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/ll_commend"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/iv_commend"
+                    android:layout_width="25dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/king_sel"
+                    android:layout_height="25dp" />
+                <TextView
+                    android:id="@+id/tv_commend"
+                    android:layout_width="wrap_content"
+                    android:textSize="13sp"
+                    android:text="推荐"
+                    android:textColor="#ef889d"
+                    android:layout_marginTop="3dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_tell"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/iv_tell"
+                    android:layout_width="25dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/tell_nor"
+                    android:layout_height="25dp" />
+                <TextView
+                    android:id="@+id/tv_tell"
+                    android:layout_width="wrap_content"
+                    android:textSize="13sp"
+                    android:text="接听"
+                    android:layout_marginTop="3dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_near"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/iv_near"
+                    android:layout_width="25dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/near_nor"
+                    android:layout_height="25dp" />
+                <TextView
+                    android:id="@+id/tv_near"
+                    android:layout_width="wrap_content"
+                    android:textSize="13sp"
+                    android:text="最近"
+                    android:layout_marginTop="3dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_me"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/iv_me"
+                    android:layout_width="25dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/me_nor"
+                    android:layout_height="25dp" />
+                <TextView
+                    android:id="@+id/tv_me"
+                    android:layout_width="wrap_content"
+                    android:textSize="13sp"
+                    android:text="我的"
+                    android:layout_marginTop="3dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+</LinearLayout>

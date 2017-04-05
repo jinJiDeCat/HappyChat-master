@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#f1f1f1"
+    tools:context="com.zz.zy.happychat.activity.ProfitActivity">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:elevation="5dp"
+        app:contentInsetStart="0dp"
+        android:background="#EF889D"
+        android:layout_height="?attr/actionBarSize">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:id="@+id/fl_back"
+                android:layout_width="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:contentDescription="@null"
+                    android:layout_width="20dp"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center"
+                    android:src="@drawable/fn"
+                    android:layout_height="20dp" />
+            </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:text="我的收益"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_getMoneyHistory"
+                android:layout_width="wrap_content"
+                android:text="提现记录"
+                android:textSize="15sp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:textColor="#fff"
+                android:layout_alignParentEnd="true"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:layout_height="80dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                tools:text="20聊币"
+                android:textColor="#527FF8"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_today" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:contentDescription="@null"
+                    android:layout_width="15dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/q1"
+                    android:layout_marginStart="3dp"
+                    android:layout_height="15dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="13sp"
+                    android:text="今日收益"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:background="#f1f1f1"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_total"
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                tools:text="288聊币"
+                android:textColor="#F7AD1C"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:contentDescription="@null"
+                    android:layout_width="15dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/q2"
+                    android:layout_marginEnd="3dp"
+                    android:layout_height="15dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="13sp"
+                    android:text="总收益"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+    <EditText
+        android:id="@+id/et_account"
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/bg_border_gray"
+        android:layout_margin="15dp"
+        android:textSize="15sp"
+        android:hint="请输入支付宝账号"
+        android:layout_height="40dp" />
+    <EditText
+        android:id="@+id/et_aname"
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/bg_border_gray"
+        android:layout_margin="15dp"
+        android:textSize="15sp"
+        android:hint="请输入支付宝名字"
+        android:layout_height="40dp" />
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="提交"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:background="@drawable/bg_round_login"
+        android:layout_height="42dp" />
+</LinearLayout>
