@@ -33,6 +33,7 @@ import com.zz.zy.happychat.mvp.model.GetPush;
 import com.zz.zy.happychat.mvp.model.GiftMessage;
 import com.zz.zy.happychat.mvp.presenter.MainPresenter;
 import com.zz.zy.happychat.mvp.view.MainView;
+import com.zz.zy.happychat.service.ForeService;
 import com.zz.zy.happychat.utils.HttpUtils;
 import com.zz.zy.happychat.utils.MyReceiveMessageListener;
 import com.zz.zy.happychat.utils.OnHttpCallBack;
@@ -89,6 +90,8 @@ public class MainActivity extends BaseActivity implements MainView {
     private RongCallSession CallSession=null;
     @Override
     public void initView() {
+        Intent  intent =new Intent(getApplicationContext(), ForeService.class);
+        startService(intent);
         EventBus.getDefault().register(this);
         viewpager.setOffscreenPageLimit(3);
         mainPresenter.initViewPager();
